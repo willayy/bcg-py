@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bcgpy"
+version = "0.1.0"
+description = "Bayesian Capital Growth calculator"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sympy",
+]
+
+[project.urls]
+Homepage = "https://github.com/willayy/bcg-py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bcgpy"]
+
+[tool.pyright]
+reportMissingTypeStubs = false
